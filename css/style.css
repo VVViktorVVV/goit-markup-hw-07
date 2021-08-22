@@ -122,6 +122,9 @@ textarea:focus {
   color: var(--logo-hedeader-color);
 }
 .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--link-text-color);
   font-family: Raleway;
   font-style: normal;
@@ -133,6 +136,10 @@ textarea:focus {
 .logo-footer {
   color: var(--white-color);
 }
+/* .footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+} */
 
 .title-text {
   color: var(--title-text-color);
@@ -198,10 +205,6 @@ textarea:focus {
   color: var(--link-text-color);
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 .address-list-item:not(:last-child) {
   margin-bottom: 8px;
 }
