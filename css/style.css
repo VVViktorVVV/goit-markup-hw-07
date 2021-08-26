@@ -862,6 +862,7 @@ contact-list-item {
 
   cursor: pointer;
 }
+
 .modal-close-icon {
   width: 11px;
   height: 11px;
@@ -957,7 +958,7 @@ contact-list-item {
   letter-spacing: 0.01em;
 }
 
-.start-form-title {
+.start-form__title {
   margin-bottom: 12px;
 
   color: var(--title-text-color);
@@ -978,7 +979,7 @@ contact-list-item {
   letter-spacing: 0.01em;
 }
 
-.start-form-rules {
+.start-form__rules {
   display: inline-flex;
   align-items: center;
 

@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     
@@ -412,20 +412,20 @@
        
     </footer>
 
-    <div class="backdrop is-hidden" data-modal> 
+    <div class="backdrop backdrop--is-hidden" data-modal> 
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-            <svg class="modal-close-icon">
+            <button type="button" class="button-modal-close" data-modal-close>
+            <svg class="button-modal-close__icon">
                 <use href="./image/symbol-defs.svg#icon-close"></use>
             </svg>
             </button>
             <form name="client-information" class="start-form">
-                <p class="start-form-title">Оставьте свои данные, мы вам перезвоним</p>
-                <label class="form-label">
-                    <span class="start-form-question">Имя</span>
-                    <span class="form-input">
-                    <input type="text" name="client-name" class="form-field">
-                    <svg class="form-icon">
+                <p class="start-form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="start-form__label">
+                    <span class="start-form__question">Имя</span>
+                    <span class="start-form__form-input">
+                    <input type="text" name="client-name" class="start-form__form-field">
+                    <svg class="start-form__form-icon">
                         <use href="./image/symbol-defs.svg#icon-person-black"></use>
                     </svg>
                     </span>
@@ -433,43 +433,43 @@
                 </label>
                 
 
-                <label class="form-label">
-                    <span class="start-form-question">Телефон</span>
-                    <span class="form-input">
-                    <input type="tel" name="client-tel" class="form-field">
-                    <svg class="form-icon">
+                <label class="start-form__label">
+                    <span class="start-form__question">Телефон</span>
+                    <span class="start-form__form-input">
+                    <input type="tel" name="client-tel" class="start-form__form-field">
+                    <svg class="start-form__form-icon">
                         <use href="./image/symbol-defs.svg#icon-phone-black"></use>
                     </svg>
                 </span>
                 </label>
                 
 
-                <label class="form-label">
-                    <span class="start-form-question">Почта</span>
-                    <span class="form-input">
-                    <input type="email" name="client-email" class="form-field">
-                    <svg class="form-icon">
+                <label class="start-form__label">
+                    <span class="start-form__question">Почта</span>
+                    <span class="start-form__form-input">
+                    <input type="email" name="client-email" class="start-form__form-field">
+                    <svg class="start-form__form-icon">
                         <use href="./image/symbol-defs.svg#icon-email-black"></use>
                     </svg>
-                </span>
+                    </span>
                 </label>
                 
 
-                <label class="form-label comment">
-                    <span class="start-form-question">Комментарий</span>
+                <label class="start-form__label start-form__comment">
+                    <span class="start-form__question">Комментарий</span>
                 
-                <textarea name="comment" cols="30" rows="5" placeholder="Введите текст" class="textarea-form"></textarea>
+                <textarea name="comment" cols="30" rows="5" placeholder="Введите текст" class="start-form__textarea-form"></textarea>
                 </label>
-                <div class="start-form-rules">
+                <div class="start-form__rules">
                 <label>
-                    <input class="checkbox" type="checkbox" name="rules-check">
-                    <span class="icon-check"></span>
+                    <input class="start-form__checkbox" type="checkbox" name="rules-check">
+                    <span class="start-form__icon-check"></span>
                 </label>
                     <span>Соглашаюсь с рассылкой и принимаю</span>
-                    <a href="" class="form-link">Условия договора</a>
+                    <a href="" class="start-form__link">Условия договора</a>
                 </div>
 
-                <button type="submit" class="button start-form-button">
+                <button type="submit" class="start-form-button">
                     Отправить
                    
                 </button>

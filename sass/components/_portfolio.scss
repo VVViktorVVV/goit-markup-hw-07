@@ -53,7 +53,7 @@
 }
 
 .portfolio-section-list__iteam {
-  width: calc ((100% - 60px) / 3);
+  width: calc ((100% - 5%) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -100,6 +100,8 @@
 .portfolio-section-list__title-text {
   margin-bottom: 4px;
 
+  color: $title-text-color;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -133,23 +135,9 @@
 
   transform: translateY(101%);
 
-  .portfolio-section-list-link:hover &,
-  .portfolio-section-list-link:focus & {
+  .portfolio-section-list__link:hover &,
+  .portfolio-section-list__link:focus & {
     transform: translateY(0);
     transition: transform 250ms $cubic;
   }
 }
-
-// .portfolio-section-list-link:hover .overlay,
-// .portfolio-section-list-link:focus .overlay {
-//   transform: translateY(0);
-//   transition: transform 250ms var(--cubic);
-// }
-
-// .portfolio-section-list-link .overlay {
-//   color: var(--white-color);
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 1.58;
-//   letter-spacing: 0.03em;
-// }

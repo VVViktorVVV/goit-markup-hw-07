@@ -56,7 +56,7 @@
 .footer-social-network__link {
   @extend %social-network-link;
 
-  background-color: var(--background-footer-social-link);
+  background-color: $background-footer-social-link;
 
   &:focus,
   &:hover {
@@ -70,6 +70,9 @@
 }
 
 .footer-social-network__icon {
+  width: 20px;
+  height: 20px;
+
   fill: $white-color;
 }
 
@@ -96,7 +99,7 @@
 
   padding: 15px;
 
-  border: 1px solid var(--address-link-color);
+  border: 1px solid $address-link-color;
   border-radius: 4px;
 }
 
