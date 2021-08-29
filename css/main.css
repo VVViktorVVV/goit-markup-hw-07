@@ -33,14 +33,6 @@ textarea:focus {
   outline-offset: 0;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .logo,
 .address-list__link,
 .contact-list__link,
@@ -78,6 +70,14 @@ textarea:focus {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-form-button, .start-form-button, .button-hero {
@@ -184,7 +184,7 @@ textarea:focus {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .header .container {
@@ -216,7 +216,7 @@ textarea:focus {
   color: #212121;
 }
 
-.nav-list__link:hover, .nav-list__linkfocus {
+.nav-list__link:hover, .nav-list__link:focus {
   color: #2196f3;
 }
 
@@ -320,6 +320,10 @@ textarea:focus {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .address {
@@ -415,6 +419,11 @@ textarea:focus {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+
+.footer-form__field:not(:placeholder-shown) {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-button {
@@ -748,7 +757,12 @@ textarea:focus {
 }
 
 .our-clients-list__client-label {
-  fill: currentColor;
+  fill: #afb1b8;
+}
+
+.our-clients-list__client-link:hover .our-clients-list__client-label,
+.our-clients-list__client-link:focus .our-clients-list__client-label {
+  fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -900,6 +914,11 @@ textarea:focus {
   -webkit-transform: translateY(101%);
       -ms-transform: translateY(101%);
           transform: translateY(101%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section-list__link:hover .overlay,
@@ -907,11 +926,6 @@ textarea:focus {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -953,7 +967,7 @@ textarea:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.5);
       -ms-transform: translate(-50%, -50%) scale(1.5);
           transform: translate(-50%, -50%) scale(1.5);
@@ -1042,8 +1056,8 @@ textarea:focus {
   fill: currentColor;
 }
 
-.start-form__label:hover .start-form__form-icon,
-.start-form__label:focus .start-form__form-icon {
+.start-form__form-field:hover ~ .start-form__form-icon,
+.start-form__form-field:focus ~ .start-form__form-icon {
   fill: #2196f3;
 }
 

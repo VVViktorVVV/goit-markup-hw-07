@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $background-backdrop;
 
   opacity: 1;
 
@@ -35,7 +35,7 @@
   opacity: 1;
   transition: transform 250ms $cubic, opacity 200ms $cubic;
 
-  .backdrop.is-hidden & {
+  .backdrop.backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
   }
@@ -90,7 +90,7 @@
   width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $border-form-color;
 
   transition: border-color 250ms $cubic;
 
@@ -116,8 +116,8 @@
   fill: currentColor;
 }
 
-.start-form__form-input:hover ~ .start-form__form-icon,
-.start-form__form-input:focus ~ .start-form__form-icon {
+.start-form__form-field:hover ~ .start-form__form-icon,
+.start-form__form-field:focus ~ .start-form__form-icon {
   fill: $link-text-color;
 }
 
@@ -128,7 +128,7 @@
   width: 100%;
   height: 120px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $border-form-color;
 
   &:hover,
   &:focus,
@@ -139,7 +139,7 @@
 }
 
 .start-form__textarea-form:placeholder-shown {
-  color: rgba(117, 117, 117, 0.5);
+  color: $textarea-text-color;
 
   font-size: 14px;
   line-height: 1.14;
@@ -177,7 +177,7 @@
   width: 16px;
   height: 15px;
 
-  border: 2px solid #212121;
+  border: 2px solid $title-text-color;
   border-radius: 2px;
 }
 

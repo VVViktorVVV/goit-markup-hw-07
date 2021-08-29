@@ -38,7 +38,12 @@
 }
 
 .our-clients-list__client-label {
-  fill: currentColor;
+  fill: $svg-icon-color;
+}
+
+.our-clients-list__client-link:hover .our-clients-list__client-label,
+.our-clients-list__client-link:focus .our-clients-list__client-label {
+  fill: $link-text-color;
 
   transition: fill 250ms $cubic;
 }
